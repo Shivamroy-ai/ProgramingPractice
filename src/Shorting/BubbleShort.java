@@ -1,4 +1,4 @@
-package ProgramPractice;
+package Shorting;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ public class BubbleShort {
     public static void main(String[]arg)
     {
 //        int []arr={49,33,77,98,11,9,22,233};
-        int []arr={53,49,67,78,81,90,112,233};
+        int []arr={53,49,59,69,71,90,112,233};
         for (int i=0;i<arr.length;i++)
         {
             boolean flag=false;
@@ -22,6 +22,7 @@ public class BubbleShort {
                     arr[j+1]=temp;
                 }
             }
+            System.out.println("array item "+ Arrays.toString(arr));
             if(flag==false)
             {System.out.println("Count = "+i); break;}
         }

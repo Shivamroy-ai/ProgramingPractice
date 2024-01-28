@@ -1,4 +1,4 @@
-package ProgramPractice;
+package Shorting;
 
 import java.util.Arrays;
 
@@ -7,11 +7,7 @@ public class SelectionShort {
 
     public static void main(String[] arg)
     {
-        int []arr={64,25,22,12,11};
-
-
-        int value=arr[0];
-        int count=0;
+        int []arr={64,25,2,12,11};
 
           for (int i=0;i<arr.length;i++)
         {
@@ -23,11 +19,11 @@ public class SelectionShort {
                     MIN=j;
                 }
             }
+            System.out.println(Arrays.toString(arr));
                 int temp=arr[i];
                 arr[i]=arr[MIN];
                 arr[MIN]=temp;
         }
-
         System.out.println("Array Item = "+ Arrays.toString(arr));
     }
 }
