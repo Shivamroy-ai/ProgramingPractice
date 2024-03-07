@@ -17,13 +17,11 @@ public class ReverseArray {
             int temp=small;
             numarr2[small]=numarr[big];
             numarr2[big]=numarr[temp];
-
             if(big>= numarr.length/2 && small<= numarr.length/2)
             {
                 big--;small++;
             }
         }
-
         System.out.println(Arrays.toString(numarr2));
     }
 }
